@@ -1,0 +1,11 @@
+10534 --->very important
+solution(https://belbesy.wordpress.com/2011/08/09/uva-10534-wavio-sequence/)
+solution(https://github.com/Diusrex/UVA-Solutions/blob/master/10534%20Wavio%20Sequence.cpp)
+
+
+10635 --->very important
+
+109490--->very important
+
+
+for problems contain nways:use unsigned long long

@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+ 
+using namespace std;
+ 
+ 
+ 
+int main() {
+ 
+    string s;
+    cin>>s;
+    int flag=0;
+    for(int i=0;i<s.size();i++)
+    {
+        switch(s[i])
+        {
+            case '0':break;
+            case '5':flag=1;s[i]='4';break;
+            case '6':flag=1;s[i]='3';break;
+            case '7':flag=1;s[i]='2';break;
+            case '8':flag=1;s[i]='1';break;
+            case '9':if(flag)s[i]='0';flag=1;break;
+            default: flag=1;
+        }
+    }
+    cout<<s;
+    return 0;
+}

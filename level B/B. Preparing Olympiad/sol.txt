@@ -1,0 +1,40 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <bits/stdc++.h>
+using namespace std;
+int n,l,r,d;
+std::vector<int>arr ;
+int ans(int i,int sum=0,int f=-1,int e=-1,int cnt=0)
+{
+    if(i==n)
+    {
+        if(f==-1)return 0;
+        if(e-f>=d&&cnt>=2&&sum>=l&&sum<=r)return 1;
+        return 0;
+    }
+    int sum1=0;
+    int sum2=0;
+    //take
+    if(f==-1)
+    sum1=ans(i+1,sum+arr[i],arr[i],arr[i],cnt+1);
+    else sum1=ans(i+1,sum+arr[i],min(f,arr[i]),max(e,arr[i]),cnt+1);
+    //not take
+    sum2=ans(i+1,sum,f,e,cnt+1);
+    return sum1+sum2;
+}
+int main()
+{
+    cin>>n>>l>>r>>d;
+    arr.resize(n);
+    for(int i=0;i<n;i++)cin>>arr[i];
+    //sort(arr.begin(),arr.end());//3san tb2a a5er w7ed t5do hoa akbr wa7ed
+    cout<<ans(0);
+    
+    return 0;
+}

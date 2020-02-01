@@ -1,0 +1,53 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+  
+  int a,b;
+  cin>>a>>b;
+  int c=a+b;
+  stringstream ss1;
+  stringstream ss2;
+  stringstream ss3;
+  ss1<<a;
+  ss2<<b;
+  ss3<<c;
+  string s1;
+  string s2;
+  string s3;
+  ss1>>s1;
+  ss2>>s2;
+  ss3>>s3;
+  int pos;
+  while(pos=s1.find('0')!=-1)
+  {s1.erase(pos,1);}
+  
+  while(pos=s2.find('0')!=-1)
+  {s2.erase(pos,1);}
+  while(pos=s3.find('0')!=-1)
+  {s3.erase(pos,1);}
+  ss1.clear();
+  ss2.clear();
+  ss3.clear();
+  
+  ss1<<s1;
+  ss2<<s2;
+  ss3<<s3;
+  ss1>>a;
+  ss2>>b;
+  ss3>>c;
+  /*cout<<ss1.str();
+  cout<<a<<endl<<b<<endl<<c;*/
+  //cout<<s1;
+  if(a+b==c)cout<<"YES";
+  else cout<<"NO";
+    return 0;
+}

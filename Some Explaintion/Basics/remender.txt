@@ -1,0 +1,3 @@
+//from video 30 till 42
+//video 17:squere matrix magic generator /connect 4:use headers and cpp files to create fns and abstract class
+//reminder problems under bit and recursion video

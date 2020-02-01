@@ -1,0 +1,7 @@
+Case 1:
+Minimum number of lectures: 4
+Total dissatisfaction index: 300
+
+Case 2:
+Minimum number of lectures: 10
+Total dissatisfaction index: 41300

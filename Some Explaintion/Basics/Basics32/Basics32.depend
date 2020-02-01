@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1567055940 source:c:\users\user\desktop\sheet mostafa saad github\sheet-mostafa-saad-problem-solving-\some explaintion\basics\basics32\main.c
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+

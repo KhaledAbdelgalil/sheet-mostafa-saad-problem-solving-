@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+#include <bits/stdc++.h>
+using namespace std;
+int a,b,c;
+int main()
+{
+   cin>>a>>b>>c;
+   //first solution
+   /*
+   int needed_data=a*c;
+   int max_weight=float(needed_data)/float(b)>float(needed_data/b)?needed_data/b+1:needed_data/b;
+   for(int i=max_weight;i>=0;i--)
+   if(!(b*c>=needed_data-i*b)){cout<<i+1;exit(0);}
+   cout<<0;*/
+   int needed_data=a*c;
+   int formed_data_during_video=b*c;
+   needed_data-=formed_data_during_video;
+   int max_weight=float(needed_data)/float(b)>float(needed_data/b)?needed_data/b+1:needed_data/b;
+   cout<<max_weight;
+    return 0;
+}
